@@ -123,7 +123,7 @@ Los valores unicos en en H_MEAN y A_MEAN no completan los 688 retros
 
 ## Procesando
 
-Usando la funcion !grepl() se encuentra valores que son formato chr que no correspon, Se observan en 21 celdas varios simbolos asteriscos son datos asterisco respondiente al numero de empleados por estada, eso es porque la ocupacion tenia menos de 10 empleados, por lo tamto no se considera relevante. Procedo a reemplazarlos por cero.
+Mediante la aplicación de la función !grepl(), se identifican valores con formato chr que no son congruentes. En 21 celdas, se evidencian símbolos asteriscos que corresponden a los datos de empleados por estado. Esto ocurre cuando la ocupación tenía menos de 10 empleados, lo cual carece de relevancia. En consecuencia, procedo a sustituir estos valores por cero para una mayor coherencia en el análisis
 
 ```{r}
 automated_jobs_mod_df <- automated_jobs_df %>%
@@ -140,12 +140,10 @@ automated_jobs_mod_df <- automated_jobs_mod_df %>%
 head(automated_jobs_mod_df)
 ```
 
-
-En cuanto a a la Limpiando espacios en blanco en todas las columnass, en la revision usando el paquete skimr, se puede observar no se identifico ningun espacio en blanco en las dveriables.
-
+En relación a la eliminación de espacios en blanco en todas las columnas, tras una revisión exhaustiva con la ayuda del paquete skimr, se constata que no se detectaron espacios en blanco en ninguna de las variables analizadas.
 
 
-Eliminando datos duplicados, aunque el analisis de estructura muestra que la culumna usando el paquete skimr, tiene 688 filas y cada una de ellas es única
+Al abordar la eliminación de datos duplicados, es importante resaltar que el análisis estructural respaldado por el paquete skimr revela que la columna en cuestión cuenta con 688 filas, siendo cada una de ellas única y no presentando duplicaciones.
 
 
 ```{r}
@@ -153,7 +151,7 @@ automated_jobs_mod_df <- automated_jobs_mod_df %>%
   distinct(.keep_all = TRUE) 
 ```
 
-Al observar , se puede ver que no hay ningun cambio en el número de filas por lo cual no hay datos completamente duplicados
+Al observar , se puede ver que no hay ningun cambio en el número de filas por lo cual no hay datos duplicados.
 
 
 ## Analizando 
