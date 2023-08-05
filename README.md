@@ -1,0 +1,2 @@
+# Analisis_en_la_Automatizacion-de-Ocupaciones-en-Estados-Unidos
+El análisis busca entender cómo la automatización laboral afecta el desempleo en diversas ocupaciones de la población en los Estados Unidos. Combina datos historicos del estudio: The future of employment: "How susceptible are jobs to computerisation" (2013) y los datos históricos abiertos "Occupational Employment and Wage Statistics" (2013 )
