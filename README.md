@@ -210,7 +210,15 @@ summary_automated_jobs_by_occupation  <-automated_jobs_large_df %>%
 
 ## Visualizando
 
-Probabilidad pondeerada por estado
+Genero una visualización interactiva para los datos.
+### Visualización en Tableau
+#### [Ver Visualización](https://public.tableau.com/views/ExplorandolaTransformacinLaboralAutomatizacindeOcupacionesenEstadosUnidos/AutomatizacindetrabajosenUSAporOcupacinyponderadaporEstado?:language=en-US&:display_count=n&:origin=viz_share_link)
+
+En la visualización interactiva se puede notar un patrón entre el salario y la probabilidad de automatización, genero una visualización estática para validar esta apreciación.
+
+--
+
+*Probabilidad ponderada por estado*
 ```{r}
 ggplot(data = summary_automated_jobs_by_state ) + geom_col(mapping = aes(x = reorder(State,Weighted_Probability ), y = Weighted_Probability , fill = Weighted_A_MEAN ))+ scale_fill_gradientn(colors = topo.colors(18))  + theme(axis.text.x = element_text(angle = 45, hjust = 1)) + labs(title = "Ponderado de probabilidad de automatización por estado", x = "Estados", y= "Probabilidad de automatización", caption = "Sources:The future of employment: How susceptible are jobs to computerisation(2013),Occupational Employment and Wage Statistics (2013)" )
 ```
@@ -222,7 +230,7 @@ Interesante descubrimiento los estados donde sus trabajadores tienen un ingreso 
 Los estados que tiene puestos de trabajo con probabilidad de automatización de l 60% son los que tienen un salario medio anual más bajo que es inferior a 50,00 dolares.
 
 
-Habra una correlación entre el salario anual y la probabilidad de automatización ? 
+*¿Habrá una correlación entre el salario anual y la probabilidad de automatización?*
 
 ```{r}
 summary_automated_jobs_by_occupation %>%
@@ -235,7 +243,7 @@ summary_automated_jobs_by_occupation %>%
 Hay una correlación negativa moderada, lo que significa que cuando la probabilidad de automatización aumenta el salario anual es menor. O lo opuesto cuando el salario es mayor la probabilidad de automatizacion disminuye.
 
 
-Visualización los data point y la linea de tendencia
+*Visualización los data point y la linea de tendencia*
 
 ```{r}
 ggplot(data = summary_automated_jobs_by_occupation) +
