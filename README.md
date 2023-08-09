@@ -8,7 +8,7 @@ El análisis busca entender cómo la automatización laboral afecta el desempleo
 * [Procesando](#procesando)
 * [Análisis](#analizando)
 * [Visualización](#visualizando)
-  * [▶️ Visualización en Tableau](#visualización-en-tableau)
+  * [▶️ Visualización en Tableau](https://public.tableau.com/views/ExplorandolaTransformacinLaboralAutomatizacindeOcupacionesenEstadosUnidos/AutomatizacindetrabajosenUSAporOcupacinyponderadaporEstado?:language=en-US&:display_count=n&:origin=viz_share_link)
 * [Actuar](#actuar)
 
 ## Pregunta
